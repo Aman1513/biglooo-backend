@@ -98,16 +98,16 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'd4u5pv1ddq291a',
-#         'USER': 'yyigbvawfnbtrp',
-#         'PASSWORD': 'c66991d7d3e076f937b2db62264ca47ebe553260195d3906e66c39c260b6bc6f',
-#         'HOST': 'ec2-52-70-45-163.compute-1.amazonaws.com',
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd8gkeqb7dm3kg',
+        'USER': 'jhlrzqhnrlflqo',
+        'PASSWORD': '59f13a311edcd0d6e5c6b746a9621516bdf2801c4e9752fbc4e684d58b48fb9f',
+        'HOST': 'ec2-34-235-31-124.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
 
 WHITENOISE_USE_FINDERS = True
 
