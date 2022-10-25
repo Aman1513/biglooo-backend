@@ -10,6 +10,6 @@ class GovtJobsList(ModelViewSet):
     serializer_class = GovtJobsSerializers 
     filter_backends = [SearchFilter]
     search_fields = ['search', 'qualification', 'department_name', 'job_title','id']
-    # DeleteJobs = GovtJobs.objects.filter( last_date__lt = datetime.now())
-    # for i in DeleteJobs:
-    #     i.delete() 
+    DeleteJobs = GovtJobs.objects.filter( last_date__lt = datetime.now())
+    for i in DeleteJobs:
+        i.delete() 

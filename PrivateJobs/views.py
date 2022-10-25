@@ -10,6 +10,6 @@ class PrivateJobsList(ModelViewSet):
     serializer_class = PrivateJobsSerializers 
     filter_backends = [SearchFilter]
     search_fields = ['company_name', 'job_title', 'salary', 'search', 'qualification', 'location', 'experience','id']
-    # DeleteJobs = PrivateJobs.objects.filter( last_date__lt = datetime.now())
-    # for i in DeleteJobs:
-    #     i.delete() 
+    DeleteJobs = PrivateJobs.objects.filter( last_date__lt = datetime.now())
+    for i in DeleteJobs:
+        i.delete() 
