@@ -8,7 +8,7 @@ class PrivateJobs(models.Model):
     company_name = models.CharField(max_length=20, null=False, blank=False)
     logo = models.ImageField(upload_to=PrivateImg, null=False, blank=False)
     job_title = models.CharField(max_length=50, null=False, blank=False)
-    salary = models.CharField(max_length=15, null=False, blank=False)
+    salary = models.CharField(max_length=50, null=False, blank=False)
     experience = models.CharField(max_length=50, null=False, blank=False)
     qualification = models.CharField(max_length=50, null=False, blank=False)
     location = models.CharField(max_length=50, null=False, blank=False)
