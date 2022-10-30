@@ -3,9 +3,11 @@ from datetime import datetime
 from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet
 from .serializer import GovtJobsSerializers
 from rest_framework.filters import SearchFilter
+from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet
+
 # Create your views here.
 
-class GovtJobsList(ModelViewSet):
+class GovtJobsList(ReadOnlyModelViewSet):
     queryset = GovtJobs.objects.all()
     serializer_class = GovtJobsSerializers 
     filter_backends = [SearchFilter]

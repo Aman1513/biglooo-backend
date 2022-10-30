@@ -5,7 +5,7 @@ from .serializer import PrivateJobsSerializers
 from rest_framework.filters import SearchFilter
 # Create your views here.
 
-class PrivateJobsList(ModelViewSet):
+class PrivateJobsList(ReadOnlyModelViewSet):
     queryset = PrivateJobs.objects.all()
     serializer_class = PrivateJobsSerializers 
     filter_backends = [SearchFilter]
